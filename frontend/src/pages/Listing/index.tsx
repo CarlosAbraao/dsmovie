@@ -1,7 +1,9 @@
+import Pagination from "components/Pagination";
+
 function Listing(){
 
     return(
-        <h1>OI</h1>
+        <Pagination/>
     )
 }
 
