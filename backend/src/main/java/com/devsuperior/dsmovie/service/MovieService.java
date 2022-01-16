@@ -9,12 +9,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dsmovie.Dto.MovieDTO;
 import com.devsuperior.dsmovie.entities.Movie;
-import com.devsuperior.dsmovie.repositories.MovieRespositories;
+import com.devsuperior.dsmovie.repositories.MovieRespository;
 
 @Service
 public class MovieService {
 	@Autowired
-	MovieRespositories repository;
+	MovieRespository repository;
 	
 	@Transactional(readOnly = true)
 	public Page<MovieDTO> findAll(Pageable pageable) {
